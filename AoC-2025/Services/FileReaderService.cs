@@ -22,9 +22,11 @@ namespace AoC_2025.Services
             throw new NotImplementedException();
         }
 
-        public string ReadDataByLines(PuzzleIdentifier identifier)
+        public string[] ReadDataByLines(PuzzleIdentifier identifier)
         {
-            throw new NotImplementedException();
+            var data = ReadData(identifier);
+
+            return data.Split(FileConstants.EndOfLine);
         }
     }
 }
