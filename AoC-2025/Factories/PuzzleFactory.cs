@@ -1,0 +1,36 @@
+﻿using AoC_2025.Abstractions;
+using AoC_2025.Enums;
+using AoC_2025.Puzzles;
+using AoC_2025.Puzzles.Base;
+
+namespace AoC_2025.Factories
+{
+    public class PuzzleFactory : IPuzzleFactory
+    {
+        private readonly IComunicationService _comunicationService;
+        private readonly IDataReaderService _dataReader;
+
+        public PuzzleFactory(IComunicationService comunicationService, IDataReaderService dataReader) 
+        {
+            _comunicationService = comunicationService;
+            _dataReader = dataReader;
+        }
+
+        public PuzzleTemplate? Create(PuzzleIdentifier identifier)
+        {
+            PuzzleTemplate? puzzle = null;
+
+            switch (identifier)
+            {
+                case PuzzleIdentifier.Day1:
+                    puzzle = new Day1(_comunicationService, _dataReader);
+                    break;
+                default:
+                    puzzle = null;
+                    break;
+            }
+
+            return puzzle;
+        }
+    }
+}

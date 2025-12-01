@@ -1,0 +1,9 @@
+/* Visual Studio Settings File */
+{
+  "copilot.general.chat.enableAgentMode": true,
+  "copilot.general.chat.enableMcpProvider": true,
+  "textEditor.codeCompletions.preferences.showCodeCompletionsOnNewLines": true,
+  "textEditor.codeCompletions.general.codeCompletionsProviders": [
+    "intellicode"
+  ]
+}
