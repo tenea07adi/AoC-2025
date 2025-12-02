@@ -7,5 +7,7 @@
         public const string EndOfLine = "\r\n";
         public const string CharacterSeparator = "";
         public const string WordsSeparator = " ";
+        public const string CommaSeparator = ",";
+        public const string DashSeparator = "-";
     }
 }
