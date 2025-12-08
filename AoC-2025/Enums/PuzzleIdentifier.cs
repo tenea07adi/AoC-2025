@@ -8,6 +8,7 @@ namespace AoC_2025.Enums
         Day4 = 4,
         Day5 = 5,
         Day6 = 6,
-        Day7 = 7
+        Day7 = 7,
+        Day8 = 8
     }
 }
