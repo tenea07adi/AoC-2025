@@ -46,6 +46,9 @@ namespace AoC_2025.Factories
                 case PuzzleIdentifier.Day8:
                     puzzle = new Day8(_comunicationService, _dataReader);
                     break;
+                case PuzzleIdentifier.Day9:
+                    puzzle = new Day9(_comunicationService, _dataReader);
+                    break;
                 default:
                     puzzle = null;
                     break;
